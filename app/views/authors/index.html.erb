@@ -1,0 +1,14 @@
+<h1 align="center">Welcome Author</h1>
+<h2><%= link_to "Add Author", new_author_path%></h2>
+<table border="" align="center">
+ <tr>
+ 	<th>Name</th>
+ </tr>
+ <tr>
+ 	<% @authors.each do |author|%>
+ 	<td>
+ 		<%=author.name%>
+ 	</td>
+ </tr>
+ <%end%>
+</table>
